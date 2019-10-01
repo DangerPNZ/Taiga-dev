@@ -1,0 +1,236 @@
+.reserves {
+  position: relative;
+}
+.reserves__map {
+  width: 100%;
+  height: 36vw;
+  position: absolute;
+  background-image: url(../img/map/map.png);
+  background-size: cover;
+  @include respond-to('mobile') {
+    height: 59vw;
+  }
+}
+.reserves__map-point {
+  position: absolute;
+  cursor: pointer;
+  &--active {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background-image: url(../img/map/map-pin.png);
+    }
+  }
+  &--laplandskiy {
+    top: 2vw;
+    left: 6vw;
+    width: 2.1vw;
+    height: 3.1vw;
+    background-image: url(../img/map/area1.png);
+    background-size: cover;
+    @include respond-to('mobile') {
+      width: 6.3vw;
+      height: 9.3vw;
+      left: 10vw;
+    }
+    &::before {
+      bottom: -2%;
+      left: -35%;
+      width: 3.6vw;
+      height: 6vw;
+      background-image: url(../img/map/area1-act.png);
+      background-size: cover;
+      @include respond-to('mobile') {
+        width: 10.8vw;
+        height: 18vw;
+      }
+    }
+  }
+  &--kivach {
+    top: 5.5vw;
+    left: 2vw;
+    width: 2.8vw;
+    height: 2.8vw;
+    background-image: url(../img/map/area2.png);
+    background-size: cover;
+    @include respond-to('mobile') {
+      width: 8.4vw;
+      height: 8.4vw;
+    }
+    &::before {
+      bottom: 0;
+      left: -19%;
+      width: 3.8vw;
+      height: 6vw;
+      background-image: url(../img/map/area2-act.png);
+      background-size: cover;
+      @include respond-to('mobile') {
+        width: 11.4vw;
+        height: 18vw;
+      }
+    }
+  }
+  &--pechoro-ilichskiy {
+    top: 15vw;
+    left: 8vw;
+    width: 3vw;
+    height: 3vw;
+    background-image: url(../img/map/area3.png);
+    background-size: cover;
+    @include respond-to('mobile') {
+      width: 9vw;
+      height: 9vw;
+      top: 21vw;
+      left: 12vw;
+    }
+    &::before {
+      bottom: -3%;
+      left: -13%;
+      width: 3.7vw;
+      height: 6vw;
+      background-image: url(../img/map/area3-act.png);
+      background-size: cover;
+      @include respond-to('mobile') {
+        width: 11.1vw;
+        height: 18vw;
+      }
+    }
+  }
+  &--barguzinskiy {
+    top: 28vw;
+    left: 33vw;
+    width: 3vw;
+    height: 3.5vw;
+    background-image: url(../img/map/area4.png);
+    background-size: cover;
+    @include respond-to('mobile') {
+      width: 9vw;
+      height: 10.5vw;
+      top: 43vw;
+      left: 53vw;
+    }
+    &::before {
+      bottom: 0;
+      left: -13%;
+      width: 3.7vw;
+      height: 6.3vw;
+      background-image: url(../img/map/area4-act.png);
+      background-size: cover;
+      @include respond-to('mobile') {
+        width: 11.1vw;
+        height: 18.9vw;
+      }
+    }
+  }
+  &--kronotckiy {
+    top: 16vw;
+    right: 0;
+    width: 3.3vw;
+    height: 2.5vw;
+    background-image: url(../img/map/area5.png);
+    background-size: cover;
+    @include respond-to('mobile') {
+      width: 9.9vw;
+      height: 7.5vw;
+      top: 21vw;
+    }
+    &::before {
+      bottom: 4%;
+      right: -9%;
+      width: 4vw;
+      height: 5.9vw;
+      background-image: url(../img/map/area5-act.png);
+      background-size: cover;
+      @include respond-to('mobile') {
+        width: 12vw;
+        height: 17.7vw;
+      }
+    }
+  }
+}
+.reserves__reserve-item {
+  display: none;
+  padding: 37vw 4vw 0;
+  &--active {
+    display: block;
+  }
+  @include respond-to('mobile') {
+    padding: 60vw 4vw 0;
+  }
+}
+.reserves__reserves__reserve-item-header {
+  text-align: center;
+}
+.reserves__reserve-name {
+  @include DINPRO-Bold;
+  font-size: 1.4vw;
+  text-transform: uppercase;
+  @include respond-to('mobile') {
+    font-size: 2.4vw;
+  }
+}
+.reserves__reserve-location {
+  margin-top: .2vw;
+  @include DINPRO-Bold;
+  font-size: 1.2vw;
+  @include respond-to('mobile') {
+    margin-top: .6vw;
+    font-size: 1.8vw;
+  }
+}
+.reserves__reserve-description {
+  min-height: 8.5vw;
+  @include respond-to('mobile') {
+    min-height: 20vw;
+  }
+}
+.reserves__reserve-toggle-arrows-container {
+  width: 35vw;
+  margin: 0 auto;
+  position: relative;
+  @include respond-to('mobile') {
+    width: 60vw;
+  }
+}
+.reserves__reserve-toggle-arrow {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 37vw;
+  @include respond-to('mobile') {
+    top: 60.5vw;
+  }
+  cursor: pointer;
+  &::before {
+    content: '';
+    width: 1.5vw;
+    height: 1.5vw;
+    display: block;
+    position: absolute;
+    top: .5vw;
+    border-top: 0.15vw solid #fff;
+    border-right: 0.15vw solid #fff;
+    z-index: 10;
+    @include respond-to('mobile') {
+      width: 3vw;
+      height: 3vw;
+      border-top: 0.35vw solid #fff;
+      border-right: 0.35vw solid #fff;
+    }
+  }
+  &--left {
+    left: 0;
+    &::before {
+      left: 15px;
+      transform: rotate(-135deg);
+    }
+  }
+  &--right {
+    right: 0;
+    &::before {
+      right: 15px;
+      transform: rotate(45deg);
+    }
+  }
+}

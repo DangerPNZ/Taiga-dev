@@ -1,0 +1,78 @@
+.slider-after-before {
+  width: 100%;
+  height: 20vw;
+  position: relative;
+  overflow: hidden;
+  @include respond-to('mobile') {
+    height: 32vw;
+  }
+}
+.slider-after-before__slide-forest {
+  background-size: 56vw;
+  @include respond-to('mobile') {
+    background-size: 91vw;
+  }
+  &--1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/slider-after-before/forest-1.jpg);
+    background-position: 0 -8vw;
+  }
+  &--2 {
+    width: 36%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../img/slider-after-before/forest-2.jpg);
+    background-position: right -5vw;
+  }
+}
+.slider-after-before__delimeter {
+  width: 0.5%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 36%;
+  background-color: #fff;
+  z-index: 10;
+}
+.slider-after-before__delimeter-pin {
+  width: 1.5vw;
+  height: 3vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -0.75vw;
+  transform: translateY(-50%);
+  border-radius: 2vw;
+  background-color: $peach;
+  cursor: move;
+  @include respond-to('mobile') {
+    width: 3.5vw;
+    height: 7vw;
+    margin-left: -1.75vw;
+  }
+  &:before {
+    content: "";
+    display: block;
+    width: 0.75vw;
+    height: 0.2vw;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.375vw;
+    top: 0.8vw;
+    border-radius: 2vw;
+    background-color: $range-bg;
+    box-shadow: 0 0.6vw 0 0 $range-bg,
+    0 1.2vw 0 0 $range-bg;
+    @include respond-to('mobile') {
+      width: 1.7vw;
+      height: 0.5vw;
+      margin-left: -0.9vw;
+      top: 1.6vw;
+      box-shadow: 0 1.6vw 0 0 $range-bg,
+      0 3.2vw 0 0 $range-bg;
+    }
+  }
+}

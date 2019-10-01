@@ -1,0 +1,369 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/style.min.css" rel="stylesheet">
+    <script src="js/lib/jquery-3.2.1.min.js"></script>
+    <script src="js/lib/jquery-ui.1.12.1.min.js"></script>
+    <script src="js/lib/jquery.ui.touch-punch.min.js"></script>
+    <title>Пётр I</title>
+</head>
+<body>
+<!-- Градиент для заголовков -->
+<svg width="0" height="0" style="position: absolute;">
+    <defs>
+        <linearGradient id="textgradient" x1="0%" x2="0%" y1="0%" y2="100%">
+            <stop stop-color="#f3d089" offset="0%"></stop>
+            <stop stop-color="#b07f26" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+</svg>
+<main class="articles">
+    <div class="articles__filter"></div>
+    <div class="articles__articles-header">
+        <div class="articles__main-heading">Удивительное рядом</div>
+        <div class="articles__dots-container">
+            <div class="articles__dot  articles__dot--planet  articles__dot--active"></div>
+            <div class="articles__dot"></div>
+            <div class="articles__dot"></div>
+            <div class="articles__dot"></div>
+            <div class="articles__dot"></div>
+            <div class="articles__dot"></div>
+        </div>
+    </div>
+
+    <div class="articles__articles-container">
+
+        <article class="article-item  article-item--active">
+            <div class="article-item__article-static-content">
+                <div class="article-item__header">
+                    <svg class="article-item__article-heading">
+                        <text class="article-item__header-shadow" x="50.3%" text-anchor="middle" fill="#000" stroke="none">Таежный роман</text>
+                        <text class="article-item__header-gradient"x="50%" text-anchor="middle" fill="url(#textgradient)" stroke="none">Таежный роман</text>
+                    </svg>
+                    <h3 class="article-item__article-additional-heading">Путешествие по самому большому лесу в мире</h3>
+                </div>
+                <p>Тайгу принято описывать исключительно в восторженных эпитетах. Ее называют &laquo;легкими&raquo; нашей планеты и самым большим лесом в мире. Даже в научном термине &laquo;биом&raquo;, с которого, собственно, и начинается разговор о тайге в любой серьезной статье, слышится что-то монументальное…</p>
+                <p>На самом деле, &laquo;биом&raquo; &mdash; это общее понятие, включающее в себя все экосистемы одной природной зоны. На территории России насчитывается 13 биомов (например, степи и лесостепи, смешанные леса), но тайга &mdash; самый большой из них.</p>
+                <p>Таежные леса &mdash; это история про размах, широту и рекорды. Шутка ли &mdash; ими покрыта почти третья часть всей нашей планеты. Оно и к лучшему! Хвойные деревья, растущие в тайге, действительно отвечают за дыхание Земли. Именно благодаря им кислородный баланс все еще остается в норме…</p>
+            </div>
+            <div class="interactive-planet__interactive-planet">
+                <div class="interactive-planet__planet-picture">
+                    <img src="img/planet-slides/article-taiga-1-frame_13.png" alt="Планета">
+                </div>
+                <div class="interactive-planet__range">
+                    <div class="interactive-planet__range-scale"></div>
+                    <div class="interactive-planet__range-pin"></div>
+                </div>
+            </div>
+            <div class="article-item__link-container">
+                <div class="article-item__link-description">Читайте дальше:</div>
+                <a href="#" class="article-item__link">Светлые и тёмные краски тайги</a>
+            </div>
+        </article>
+
+        <article class="article-item">
+            <div class="article-item__article-static-content">
+                <div class="article-item__header">
+                    <svg class="article-item__article-heading">
+                        <text class="article-item__header-shadow" x="50.3%" text-anchor="middle" fill="#000" stroke="none">Познай тайгу</text>
+                        <text class="article-item__header-gradient" x="50%" text-anchor="middle" fill="url(#textgradient)" stroke="none">Познай тайгу</text>
+                    </svg>
+                    <h3 class="article-item__article-additional-heading">Все оттенки тайги</h3>
+                </div>
+                <p>Несмотря на огромную площадь, которую тайга занимает на нашей планете, эта зона вряд ли удивит Вас многообразием пейзажей. Все, на что можно рассчитывать &mdash; игра хвойных оттенков. Светлые колючки против темных. Зато воздух здесь такой, что с первой минуты начинает казаться, будто Вы помолодели. И мысли стали яснее, а сердце добрее.</p>
+                <p>Пейзажи, впрочем, меняются. Во-первых, из-за сезонов. Зима в тайге отличается от лета на несколько десятков градусов. Во-вторых, из-за географии. Таежные леса тянутся с севера на юг через всю нашу страну. В Европейской зоне &laquo;ширина&raquo; тайги &mdash; 800 километров, а в Западной и Восточной Сибири она доходит до 2000 (рекорд &mdash; 2150 километров!).</p>
+                <p>Само слово &laquo;тайга&raquo; появилось в русском обиходе в середине девятнадцатого века. Ученые до сих пор спорят о его происхождении. Но уже в 1898 году известный ботаник Порфирий Крылов подробно анализировал природный феномен тайги. Такой, какой мы знаем ее сегодня.</p>
+                <div class="article-item__types-of-taiga">
+                    <div class="article-item__type">
+                        <h4 class="article__type-heading">Светлохвойная тайга</h4>
+                        <p>Один из двух основных типов тайги. В лесах, распространенных в Восточной и Средней Сибири, преобладают лиственницы и сосны. А иногда и вовсе встречаются березы с осинами.</p>
+                    </div>
+                    <div class="article-item__type">
+                        <h4 class="article__type-heading">Темнохвойная тайга</h4>
+                        <p>Второй основной тип тайги. Леса, в которых главенствуют ель, пихта и можжевельник, распространены в районах с хорошим увлажнением.<br>В Сибири их можно встретить в горах &mdash; с высотой увеличивается количество осадков.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-after-before">
+                <div class="slider-after-before__slide-forest  slider-after-before__slide-forest--1"></div>
+                <div class="slider-after-before__delimeter">
+                    <div class="slider-after-before__delimeter-pin"></div>
+                </div>
+                <div class="slider-after-before__slide-forest  slider-after-before__slide-forest--2"></div>
+            </div>
+            <div class="article-item__link-container">
+                <div class="article-item__link-description">Читайте дальше:</div>
+                <a href="#" class="article-item__link">Хотите узнать самые интересные факты о тайге?</a>
+                <a href="#" class="article-item__link">А может Вас больше интересуют секреты,<br>которые хранят в себе ее темные леса?</a>
+            </div>
+        </article>
+
+
+        <article class="article-item">
+            <div class="article-item__article-static-content">
+                <div class="article-item__header">
+                    <svg class="article-item__article-heading">
+                        <text class="article-item__header-shadow" x="50.3%" text-anchor="middle" fill="#000" stroke="none">Интересные факты</text>
+                        <text class="article-item__header-gradient" x="50%" text-anchor="middle" fill="url(#textgradient)" stroke="none">Интересные факты</text>
+                    </svg>
+                    <h3 class="article-item__article-additional-heading">и несколько секретов</h3>
+                </div>
+                <div class="article-item__items-container">
+                    <div class="article-item__item">
+                        <div class="article-item__item-feature">15 миллионов километров</div>
+                        <div class="article-item__item-description">&mdash; такова общая площадь таежной зоны на нашей планете. </div>
+                    </div>
+                    <div class="article-item__item">
+                        <div class="article-item__item-feature">33 тысячи видов насекомых</div>
+                        <div class="article-item__item-description">можно встретить в русской тайге. Но не всех из них стоит бояться. Помимо гнусов, комаров, слепней и прочих кровожадных мошек здесь обитают, например, прекрасные редкие бабочки.</div>
+                    </div>
+                    <div class="insect-slider">
+                        <div class="insect-slider__insect-container">
+                            <div class="insect-slider__insect-swarm  insect-slider__insect-swarm--mosquitoes"></div>
+                            <div class="insect-slider__insect-swarm  insect-slider__insect-swarm--flies"></div>
+                            <div class="insect-slider__insect-swarm  insect-slider__insect-swarm--midges"></div>
+                        </div>
+                        <div class="insect-slider__aerosol"></div>
+                    </div>
+                    <div class="article-item__item">
+                        <div class="article-item__item-feature">400 лет</div>
+                        <div class="article-item__item-description">&mdash; средний возраст растущих в тайге кедров. Кстати, по заверениям ученых, одного гектара кедрового леса вполне хватит, чтобы очистить от микробов небольшой город!</div>
+                    </div>
+                    <div class="article-item__item">
+                        <div class="article-item__item-feature">100 градусов</div>
+                        <div class="article-item__item-description">&mdash; максимальный перепад между зимними и летними температурами в тайге. Такой огромный контраст &mdash; один из самых жестких природных феноменов на нашей планете.</div>
+                    </div>
+                    <div class="article-item__item">
+                        <div class="article-item__item-feature">38 заповедников</div>
+                        <div class="article-item__item-description">России находятся на территории Тайги. О самых интересных из них Вы узнаете из другой главы нашей интерактивной статьи.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="document-slider">
+                <div class="document-slider__word  document-slider__word--0  document-slider__word--active"></div>
+
+                <div class="document-slider__word  document-slider__word--1">
+                    <div class="document-slider__page">
+                        <h4 class="document-slider__heading">Тунгусский метеорит</h4>
+                        <p>Утром 17 июня 1908 года в незаселенной таежной зоне около реки Подкаменная Тунгуска произошел воздушный взрыв, по силе сравнимый со взрывом самой мощной водородной бомбы на земле. Грохот разорвавшегося в небе огненного шара услышали даже<br>в других странах. От силы взрывной волны<br>в домах,  находившихся в радиусе 200 километров, вылетели окна.</p>
+                        <p>Позже огненному шару дали имя – Тунгусский метеорит. Но ни одна экспедиция так и не смогла найти осколок самого метеорита, по которому<br>можно было точно определить его природу.<br>На протяжении всего двадцатого века самый загадочный взрыв на нашей планете пытались объяснить<br>с помощью самых невероятных теорий. Например, советский писатель-фантаст Александр Казанцев настаивал на том, что Земля столкнулась<br>с маленькой черной дырой (позже эту версию обыграли братья Стругацкие в романе "Понедельник</p>
+                    </div>
+                </div>
+
+                <div class="document-slider__word  document-slider__word--2">
+                    <div class="document-slider__page">
+                        <p class="document-slider__continuation-p">начинается в субботу").</p>
+                        <p>О Тунгусском метеорите написано много книг и снято много фильмов. Ему даже посвятили целую серию в культовом сериале «Секретные материалы».</p>
+                        <h4 class="document-slider__heading">РУССКИЙ СТОУНХЕНДЖ</h4>
+                        <p>Несколько лет назад русские геологи случайно обнаружили удивительную скалу, похожую на стены давно разрушенного здания, на одном из хребтов Горной Шории за Междуреченском. Эта скала состоит из гигантских гранитных блоков, каждый из которых весит около тысячи тонн. Каменная кладка доходит в высоту до 40 метров, а в длину тянется на 200 метров.</p>
+                        <p>Сама "постройка" находится в труднопроходимой<br>зоне тайги. Именно поэтому о ней долгое время<br>ничего не знали. По мнению геологов, когда-то этот массив был цельным камнем. Но эрозия обнажила трещины, появившиеся, когда камень был ещё<br>в недрах земли, и скала распалась</p>
+                    </div>
+                </div>
+
+                <div class="document-slider__word  document-slider__word--3">
+                    <div class="document-slider__page">
+                        <p class="document-slider__continuation-p">на огромные "кирпичи". Однако удивительное её
+                            сходство с рукотворной каменной кладкой заставляет путешественников ломать голову – как и зачем наши предки затащили огромные камни так высоко? Что за здание они строили? Дворец великанов? Храм для древних обрядов? Кто-то даже предположил, что подобные сооружения возводили, чтобы "стабилизировать" земную ось…</p>
+                        <p>В интернете находку уже окрестили "Русским Стоунхенджем". Оригинальный Стоунхендж находится в Англии и является одним из самых знаменитых древних памятников в мире. Гигантские булыжники, выставленные в особой последовательности посреди чистого поля, образуют архитектурный ансамбль, назначение которого так и не удалось разгадать.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-item__link-container">
+                <div class="article-item__link-description">Читайте дальше:</div>
+                <a href="#" class="article-item__link">Познакомьтесь с зеленым лесным певуном и лягушкой,<br>полюбившей тайгу вопреки законам природы…</a>
+            </div>
+        </article>
+
+
+        <article class="article-item">
+            <div class="article-item__article-static-content">
+                <div class="article-item__header">
+                    <svg class="article-item__article-heading">
+                        <text class="article-item__header-shadow" x="50.3%" text-anchor="middle" fill="#000" stroke="none">Первое знакомство</text>
+                        <text class="article-item__header-gradient" x="50%" text-anchor="middle" fill="url(#textgradient)" stroke="none">Первое знакомство</text>
+                    </svg>
+                    <h3 class="article-item__article-additional-heading">с местными жителями</h3>
+                </div>
+                <p>В таежных лесах царят хвойные деревья. Бал здесь правит император кедр и три королевы &mdash; ель, сосна и лиственница. От зоны к зоне, от страны к стране меняются только пропорции... На границе с Финляндией доминируют еловые леса, а на Урале &mdash; сосновые.</p>
+                <p>Из-за отсутствия света и резких перепадов температур, растительность в тайге достаточно однообразна. Но если Вы вдруг заблудитесь в суровом хвойном лесу, ищите кустарники со съедобными ягодами &mdash; черникой, брусникой и смородиной.</p>
+                <p>А вот животных в тайге очень много. Одних только птиц насчитывается около 300 видов! С некоторыми из местных обитателей мы познакомим Вас прямо сейчас!</p>
+            </div>
+            <div class="animals-game">
+                <div class="animals-game__habitat">
+                    <div class="animals-game__drop-area  animals-game__drop-area--1" id="forest"></div>
+                    <div class="animals-game__drop-area  animals-game__drop-area--2" id="lake"></div>
+                    <div class="animals-game__drop-area  animals-game__drop-area--3" id="tree"></div>
+                    <div class="animals-game__animals">
+                        <img src="img/animals-game/bird.png" alt="Зелёный лесной певун" class="animals-game__animal  animals-game__animal--bird" id="bird" draggable="true" data-dropzone="tree">
+                        <img src="img/animals-game/frog.png" alt="Сибирская лягушка" class="animals-game__animal  animals-game__animal--frog" id="frog" draggable="true" data-dropzone="lake">
+                        <img src="img/animals-game/lynx.png" alt="Рысь" class="animals-game__animal  animals-game__animal--lynx" id="lynx" draggable="true" data-dropzone="forest">
+                    </div>
+                </div>
+                <div class="animals-game__event-description-container">
+                    <div class="animals-game__event-description  animals-game__event-description--game-description  animals-game__event-description--show">Расставьте таёжных зверей по их местам обитания</div>
+                    <div class="animals-game__event-description  animals-game__event-description--bird-description" data-id="tree">
+                        <div class="animals-game__animal-name">Зеленый лесной певун.</div>
+                        <div class="animals-game__animal-description">Самая красивая птица в местных лесах. Певун миниатюрен (длина тела всего 13 сантиметров), зато громок и сладкоголос. Свое имя эти птицы получили из-за необычного окраса. Верхняя часть тела вместе с макушкой у них покрыта роскошным оперением жёлто-зелёного цвета.</div>
+                    </div>
+                    <div class="animals-game__event-description  animals-game__event-description--frog-description" data-id="lake">
+                        <div class="animals-game__animal-name">Сибирская лягушка.</div>
+                        <div class="animals-game__animal-description">Несмотря на свою хладнокровность, этот вид сумел приспособиться к таежному климату с его резкими перепадами температур. Возможно, в тайге им просто веселее — здесь ведь можно встретить и сибирского углозуба (смешную ящерицу) и леопардовую лягушку (самую стильную из семейства бесхвостых земноводных).</div>
+                    </div>
+                    <div class="animals-game__event-description  animals-game__event-description--lynx-description" data-id="forest">
+                        <div class="animals-game__animal-name">Рысь.</div>
+                        <div class="animals-game__animal-description">Единственный представитель семейства кошачьих, которого можно встретить в таежных лесах. Внешне рысь похожа на огромную кошку — от милых домашних питомцев ее отличают размер и кисточки на ушах.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-item__link-container">
+                <div class="article-item__link-description">Читайте дальше:</div>
+                <a href="#" class="article-item__link">Куда нужно ехать за таёжными красотами?</a>
+            </div>
+        </article>
+
+
+        <article class="article-item">
+            <div class="article-item__article-static-content">
+                <div class="article-item__header">
+                    <svg class="article-item__article-heading">
+                        <text class="article-item__header-shadow" x="50.3%" text-anchor="middle" fill="#000" stroke="none">Заповедная тайга</text>
+                        <text class="article-item__header-gradient" x="50%" text-anchor="middle" fill="url(#textgradient)" stroke="none">Заповедная тайга</text>
+                    </svg>
+                    <p class="article-item__reserves-prev">Таежные леса &mdash; гордость крупнейших заповедников России.<br>Мы составили карту самых интересных из них.</p>
+                </div>
+            </div>
+
+            <div class="reserves">
+                <div class="reserves__map">
+                    <div class="reserves__map-point  reserves__map-point--laplandskiy  reserves__map-point--active"></div>
+                    <div class="reserves__map-point  reserves__map-point--kivach"></div>
+                    <div class="reserves__map-point  reserves__map-point--pechoro-ilichskiy"></div>
+                    <div class="reserves__map-point  reserves__map-point--barguzinskiy"></div>
+                    <div class="reserves__map-point  reserves__map-point--kronotckiy"></div>
+                </div>
+                <div class="reserves__about-reserve">
+                    <div class="reserves__reserve-toggle-arrows-container">
+                        <div class="reserves__reserve-toggle-arrow  reserves__reserve-toggle-arrow--left"></div>
+                        <div class="reserves__reserve-toggle-arrow  reserves__reserve-toggle-arrow--right"></div>
+                    </div>
+                    <div class="reserves__reserve-item  reserves__reserve-item--active">
+                        <div class="reserves__reserves__reserve-item-header">
+                            <h3 class="reserves__reserve-name">Лапландский заповедник</h3>
+                            <div class="reserves__reserve-location">Мурманская область</div>
+                        </div>
+                        <p class="reserves__reserve-description">Одна из крупнейших охраняемых природных территорий в Европе. Здесь проходит водораздел Белого и Баренцева морей. Сама территория и вправду напоминает родину Деда Мороза. В заповеднике можно увидеть не только тайгу, но и тундру, о которой мы рассказывали в прошлых интерактивных статьях.</p>
+                    </div>
+                    <div class="reserves__reserve-item">
+                        <div class="reserves__reserves__reserve-item-header">
+                            <h3 class="reserves__reserve-name">Заповедник &laquo;Кивач&raquo;</h3>
+                            <div class="reserves__reserve-location">Карелия</div>
+                        </div>
+                        <p class="reserves__reserve-description">Главная достопримечательность этого заповедника &mdash; одноименный водопад. Посмотреть на него съезжаются туристы со всей Европы. После осмотра водопада нужно обязательно посетить Сопохский бор. Многим деревьям в этом лесу больше трехсот лет!</p>
+                    </div>
+                    <div class="reserves__reserve-item">
+                        <div class="reserves__reserves__reserve-item-header">
+                            <h3 class="reserves__reserve-name">Печоро-Илычский заповедник</h3>
+                            <div class="reserves__reserve-location">Республика Коми</div>
+                        </div>
+                        <p class="reserves__reserve-description">Один из самых знаменитых заповедников России &mdash; лучшее место для знакомства с уральской тайгой. Природа здесь сильно меняется от запада к востоку. Вся Припечорская низменность &mdash; сосны да болота, но чем ближе Вы подходите к уральским горам, тем темнее становится лес... На базе заповедника также работает первая в мире лосеферма.</p>
+                    </div>
+                    <div class="reserves__reserve-item">
+                        <div class="reserves__reserves__reserve-item-header">
+                            <h3 class="reserves__reserve-name">Баргузинский заповедник</h3>
+                            <div class="reserves__reserve-location">Бурятия</div>
+                        </div>
+                        <p class="reserves__reserve-description">Самому старому заповеднику России в этом году исполнилось 100 лет. Здесь можно увидеть красивые дикие пляжи озера Байкал и встретить в хвойных лесах лося, медведя, бурозубку и даже соболя, которого в этом заповеднике спасают от вымирания на протяжении 80 лет!</p>
+                    </div>
+                    <div class="reserves__reserve-item">
+                        <div class="reserves__reserves__reserve-item-header">
+                            <h3 class="reserves__reserve-name">Кроноцкий заповедник</h3>
+                            <div class="reserves__reserve-location">Камчатский край</div>
+                        </div>
+                        <p class="reserves__reserve-description">На территории этого уникального заповедника (которая, кстати, простирается больше чем на миллион гектаров) можно увидеть не только хвойные леса с зарослями кедра и ольхи, но и Долину гейзеров, термальные озера, восемь действующих вулканов и даже Тихий океан.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-item__link-container">
+                <div class="article-item__link-description">Читайте дальше:</div>
+                <a href="#" class="article-item__link">А что делать, если Вам захотелось<br>увидеть тайгу прямо сейчас?</a>
+            </div>
+        </article>
+
+
+        <article class="article-item">
+            <div class="article-item__article-static-content">
+                <div class="article-item__header">
+                    <svg class="article-item__article-heading">
+                        <text class="article-item__header-shadow" x="50.3%" text-anchor="middle" fill="#000" stroke="none">Путешествие в тайгу</text>
+                        <text class="article-item__header-gradient" x="50%" text-anchor="middle" fill="url(#textgradient)" stroke="none">Путешествие в тайгу</text>
+                    </svg>
+                    <h3 class="article-item__article-additional-heading">для тех, кто не любит выходить из дома...</h3>
+                </div>
+                <p>Мы понимаем – даже если очень хочется, просто так взять и сорваться на пару недель в путешествие по таежному заповеднику очень сложно. Тем более, в холодный сезон. Но у нас есть для вас специальный билет…Предлагаем увидеть красоту тайги на экране компьютера и телевизора. Мы составили список лучших фильмов и сериалов, которые Вам в этом помогут, рассортировав их по жанрам.</p>
+                <h4 class="article-item__film-genre-heading">Классика</h4>
+                <div class="article-item__film-item">
+                    <div class="article-item__film-name">&laquo;Хозяин тайги&raquo;</div>
+                    <p>Популярнейший советский детектив с Валерием Золотухиным в главной роли. Ночное ограбление с последующим расследованием на фоне таежных пейзажей. Не столько страшно, сколько красиво.</p>
+                </div>
+                <div class="article-item__film-item">
+                    <div class="article-item__film-name">&laquo;Дерсу Узала&raquo;</div>
+                    <p>Культовый фильм японского режиссера Акиры Куросавы, снятый по произведениям советского писателя Владимира Арсеньева. В центре сюжета – легендарный охотник Дерсу Узала (чуть ли не самый знаменитый человек из Уссурийского края).</p>
+                </div>
+                <h4 class="article-item__film-genre-heading">Современные сериалы</h4>
+                <div class="article-item__film-item">
+                    <div class="article-item__film-name">&laquo;Тайга. Курс выживания&raquo;</div>
+                    <p>Остросюжетный сериал про потерявшихся в диких таежных лесах пассажиров самолета, потерпевшего крушение. Чем-то напоминает &laquo;Остаться в живых&raquo;, только пострашнее. Ведь вместо жаркого необитаемого острова герои оказываются в холодной, непроходимой Сибири.</p>
+                </div>
+                <div class="article-item__film-item">
+                    <div class="article-item__film-name">&laquo;Граница. Таёжный роман&raquo;</div>
+                    <p>Великолепный 8-серийный телефильм Алексея Митты, доказавший когда-то всей стране, что у русских сериалов есть будущее. Действие происходит на Дальнем Востоке в таежном городке на границе с Китаем.</p>
+                </div>
+                <h4 class="article-item__film-genre-heading">Документальное кино</h4>
+                <div class="article-item__film-item">
+                    <div class="article-item__film-name">&laquo;Счастливые люди&raquo;</div>
+                    <p>Документальный мини-сериал о жизни таежного поселка Бахта в Туруханском районе. Эдакие &laquo;Особенности таежной охоты&raquo;, где вместо сценария – правда жизни. Каждая из четырех серий посвящена определенному времени года: зиме, весне, лету, осени.</p>
+                </div>
+                <div class="article-item__film-item">
+                    <div class="article-item__film-name">&laquo;Затерянные в тайге&raquo;</div>
+                    <p>Короткий немецкий документальный фильм о старообрядцах, поселившихся в глухой тайге и живущих параллельно современной цивилизации.</p>
+                </div>
+                <div class="article-item__film-item">
+                    <div class="article-item__film-name">&laquo;Дикая природа России&raquo;</div>
+                    <p>Масштабный проект, созданный немецкими документалистами. Вас приглашают в самые труднодоступные для туристов места. Некоторые из них до сих пор можно увидеть только в этом фильме.</p>
+                </div>
+            </div>
+            <div class="interactive-tv">
+                <svg width="495" height="359" class="interactive-tv__tv" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="body" width="495" height="361"></rect>
+                    <rect class="body-2" width="495" height="361" rx="0.8vw" ry="0.8vw"></rect>
+                    <rect class="button-panel" width="420" height="42" rx="1.2vw" ry="1.2vw"></rect>
+                    <rect class="button button--first" width="36" height="22" rx="0.8vw" ry="0.8vw"></rect>
+                    <rect class="button button--second" width="36" height="22" rx="0.8vw" ry="0.8vw"></rect>
+                    <rect class="button button--third" width="36" height="22" rx="0.8vw" ry="0.8vw"></rect>
+                </svg>
+                <div class="interactive-tv__picture-block"></div>
+                <a href="#" class="interactive-tv__power-btn">
+                    Включить тайгу
+                    <div class="visuality-hidden">Кнопка для отображения картинки в интерактивном блоке</div>
+                </a>
+            </div>
+        </article>
+    </div>
+</main>
+
+<script src="js/global.js" defer></script>
+<script src="js/article-nav.js" defer></script>
+<script src="js/interactive-planet.js" defer></script>
+<script src="js/after-before.js" defer></script>
+<script src="js/insect-slider.js" defer></script>
+<script src="js/document-slider.js" defer></script>
+<script src="js/animals-game.js" defer></script>
+<script src="js/reserves-map.js" defer></script>
+<script src="js/interactive-tv.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,1334 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+@font-face {
+  font-family: 'DINPro-Regular';
+  src: url("../fonts/DINPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro-Regular.otf") format("opentype"), url("../fonts/DINPro-Regular.woff") format("woff"), url("../fonts/DINPro-Regular.ttf") format("truetype"), url("../fonts/DINPro-Regular.svg#DINPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'DINPro-Medium';
+  src: url("../fonts/DINPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro-Medium.otf") format("opentype"), url("../fonts/DINPro-Medium.woff") format("woff"), url("../fonts/DINPro-Medium.ttf") format("truetype"), url("../fonts/DINPro-Medium.svg#DINPro-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'DINPro-Bold';
+  src: url("../fonts/DINPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro-Bold.otf") format("opentype"), url("../fonts/DINPro-Bold.woff") format("woff"), url("../fonts/DINPro-Bold.ttf") format("truetype"), url("../fonts/DINPro-Bold.svg#DINPro-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'DINPro-Black';
+  src: url("../fonts/DINPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro-Black.otf") format("opentype"), url("../fonts/DINPro-Black.woff") format("woff"), url("../fonts/DINPro-Black.ttf") format("truetype"), url("../fonts/DINPro-Black.svg#DINPro-Black") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "DINPro-Regular", "Arial", sans-serif;
+  width: 100%; }
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.visuality-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
+
+.articles {
+  position: relative;
+  width: 100%;
+  padding: 1.5vw 0 12.5vw;
+  background-image: url(../img/main/articles-bg.jpg);
+  background-size: cover;
+  background-position: left bottom; }
+
+.articles__filter {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 68, 112, 0.4); }
+
+.articles__articles-header {
+  position: relative;
+  width: 55vw;
+  margin: 0 auto;
+  z-index: 10; }
+
+.articles__main-heading {
+  font-family: "DINPro-Black", "Arial", sans-serif;
+  font-size: 3vw;
+  line-height: 3vw;
+  min-height: 4vw;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff; }
+
+.articles__dots-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -2.7vw; }
+
+.articles__dot {
+  width: 1vw;
+  height: 1vw;
+  margin: 0 0.5vw;
+  border: 0.1vw solid #fff;
+  cursor: pointer; }
+  .articles__dot--active {
+    border: none;
+    background-color: #25acdf; }
+
+.articles__articles-container {
+  position: relative; }
+
+.article-item {
+  display: none;
+  position: relative;
+  width: 55vw;
+  margin: 0 auto;
+  background-color: #004470;
+  color: #fff;
+  border: .01vw solid transparent; }
+  .article-item p {
+    font-size: 1vw;
+    line-height: 1.7vw;
+    padding-top: 1.4vw; }
+  .article-item--active {
+    display: block; }
+
+.article-item__article-static-content {
+  padding: 3.5vw 4vw 0; }
+
+.article-item__article-heading {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2.3vw; }
+  .article-item__article-heading text {
+    font-family: "DINPro-Black", "Arial", sans-serif;
+    font-size: 2vw;
+    text-transform: uppercase; }
+  .article-item__article-heading .article-item__header-gradient {
+    transform: translateY(2vw); }
+  .article-item__article-heading .article-item__header-shadow {
+    transform: translateY(2.2vw); }
+
+.article-item__header {
+  text-align: center; }
+
+.article-item__article-additional-heading {
+  font-family: "DINPro-Bold", "Arial", sans-serif;
+  padding-top: .3vw;
+  font-size: 1.3vw; }
+
+.article-item__link-container {
+  padding: 2.5vw 0 3vw 0;
+  font-family: "DINPro-Medium", "Arial", sans-serif;
+  font-size: 1.2vw;
+  line-height: 1.8vw;
+  text-align: center; }
+  .article-item__link-container .article-item__link {
+    display: block;
+    color: #fff; }
+
+.article-item__types-of-taiga {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3vw 0 4vw; }
+  .article-item__types-of-taiga .article-item__type {
+    width: 45%; }
+    .article-item__types-of-taiga .article-item__type:last-child {
+      margin-left: 3vw; }
+  .article-item__types-of-taiga p {
+    padding: 0;
+    font-size: 1vw;
+    line-height: 1.7vw; }
+  .article-item__types-of-taiga .article__type-heading {
+    padding-bottom: .6vw;
+    font-family: "DINPro-Bold", "Arial", sans-serif;
+    font-size: 1vw; }
+
+.article-item__item {
+  padding-bottom: 1.6vw; }
+  .article-item__item:first-child {
+    padding-top: 1.6vw; }
+
+.article-item__item-feature {
+  display: inline;
+  font-family: "DINPro-Black", "Arial", sans-serif;
+  font-size: 1vw;
+  line-height: 1.8vw;
+  text-transform: uppercase; }
+
+.article-item__item-description {
+  display: inline;
+  font-size: 1vw;
+  line-height: 1.7vw;
+  padding-top: 1.4vw; }
+
+.article-item__film-genre-heading {
+  padding-top: 2vw;
+  font-family: "DINPro-Black", "Arial", sans-serif;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  text-align: center; }
+
+.article-item__film-item {
+  padding-bottom: .5vw; }
+  .article-item__film-item p {
+    padding-top: .3vw; }
+
+.article-item__film-name {
+  padding-top: 1vw;
+  font-family: "DINPro-Bold", "Arial", sans-serif;
+  font-size: 1.1vw; }
+
+.interactive-planet__range {
+  width: 60%;
+  height: 0.8vw;
+  margin: 0 auto;
+  position: relative;
+  background-color: #003456;
+  border-radius: 2vw; }
+  .interactive-planet__range .interactive-planet__range-scale {
+    width: 20%;
+    height: .8vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2vw;
+    background-color: #fff; }
+  .interactive-planet__range .interactive-planet__range-pin {
+    width: 2.5vw;
+    height: 2.5vw;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateX(-20%) translateY(-1.25vw);
+    border-radius: 50%;
+    background-color: #f4cf7b;
+    cursor: move; }
+    .interactive-planet__range .interactive-planet__range-pin::before {
+      content: "";
+      display: block;
+      width: 1.1vw;
+      height: 1.1vw;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      background-color: #003456;
+      border-radius: 50%; }
+
+.interactive-planet__planet-picture {
+  padding: 3vw 0 4vw; }
+  .interactive-planet__planet-picture img {
+    width: 15vw;
+    height: 15vw;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0.1vw 0.2vw 0.5vw 0.1vw rgba(0, 0, 0, 0.3); }
+
+.slider-after-before {
+  width: 100%;
+  height: 20vw;
+  position: relative;
+  overflow: hidden; }
+
+.slider-after-before__slide-forest {
+  background-size: 56vw; }
+  .slider-after-before__slide-forest--1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/slider-after-before/forest-1.jpg);
+    background-position: 0 -8vw; }
+  .slider-after-before__slide-forest--2 {
+    width: 36%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../img/slider-after-before/forest-2.jpg);
+    background-position: right -5vw; }
+
+.slider-after-before__delimeter {
+  width: 0.5%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 36%;
+  background-color: #fff;
+  z-index: 10; }
+
+.slider-after-before__delimeter-pin {
+  width: 1.5vw;
+  height: 3vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -0.75vw;
+  transform: translateY(-50%);
+  border-radius: 2vw;
+  background-color: #f4cf7b;
+  cursor: move; }
+  .slider-after-before__delimeter-pin:before {
+    content: "";
+    display: block;
+    width: 0.75vw;
+    height: 0.2vw;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.375vw;
+    top: 0.8vw;
+    border-radius: 2vw;
+    background-color: #003456;
+    box-shadow: 0 0.6vw 0 0 #003456, 0 1.2vw 0 0 #003456; }
+
+.insect-slider {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2vw;
+  width: 100%;
+  min-height: 11vw; }
+
+.insect-slider__insect-container {
+  position: relative; }
+
+.insect-slider__insect-swarm {
+  position: absolute; }
+  .insect-slider__insect-swarm--mosquitoes {
+    width: 10vw;
+    height: 10vw;
+    background-image: url(../img/insects/mosquitoes.png);
+    background-size: cover; }
+  .insect-slider__insect-swarm--flies {
+    width: 7.3vw;
+    height: 8.5vw;
+    left: 16vw;
+    background-image: url(../img/insects/flies.png);
+    background-size: cover; }
+  .insect-slider__insect-swarm--midges {
+    width: 6vw;
+    height: 8vw;
+    left: 30vw;
+    background-image: url(../img/insects/midges.png);
+    background-size: cover; }
+  .insect-slider__insect-swarm--hide {
+    display: none; }
+
+.insect-slider__aerosol {
+  width: 3.6vw;
+  height: 10.8vw;
+  margin-left: auto;
+  background-image: url(../img/insects/aerosol.png);
+  background-size: cover;
+  cursor: pointer; }
+
+.document-slider {
+  padding-top: 3vw; }
+
+.document-slider__heading {
+  display: inline-block;
+  margin: 1.5vw 0 1vw 8.6vw;
+  padding: 0.6vw 0 0.5vw;
+  text-transform: uppercase;
+  border-top: 0.1vw dashed #484848;
+  border-bottom: 0.1vw dashed #484848; }
+
+.document-slider__word {
+  display: none;
+  width: 31vw;
+  min-height: 40vw;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Courier New", "Courier", monospace;
+  font-weight: bold;
+  color: #484848;
+  font-size: .6vw;
+  line-height: .8vw;
+  cursor: pointer; }
+  .document-slider__word p {
+    text-indent: 1.5vw;
+    font-size: 0.65vw;
+    line-height: 1.5vw; }
+  .document-slider__word .document-slider__continuation-p {
+    text-indent: 0; }
+  .document-slider__word--0 {
+    background-image: url(../img/document-slider/folder-closed.png);
+    background-size: cover; }
+  .document-slider__word--1 {
+    padding-top: 4vw;
+    background-image: url(../img/document-slider/folder-page1.png);
+    background-size: cover; }
+  .document-slider__word--2 {
+    padding-top: 3vw;
+    background-image: url(../img/document-slider/folder-page2.png);
+    background-size: cover; }
+  .document-slider__word--3 {
+    padding-top: 3vw;
+    background-image: url(../img/document-slider/folder-page3.png);
+    background-size: cover; }
+  .document-slider__word--active {
+    display: block; }
+
+.document-slider__page {
+  padding: 0 2.8vw 0 4.2vw; }
+
+.animals-game {
+  margin-top: 2.5vw;
+  width: 100%; }
+
+.animals-game__habitat {
+  position: relative;
+  width: 100%;
+  height: 19vw;
+  background-image: url(../img/animals-game/habitat.jpg);
+  background-size: cover; }
+
+.animals-game__drop-area {
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  border: 0.2vw dashed #fff;
+  border-radius: 50%; }
+  .animals-game__drop-area--complete {
+    background-color: rgba(86, 224, 76, 0.2);
+    border-color: #2fa326; }
+  .animals-game__drop-area--1 {
+    bottom: 3%;
+    left: 7%; }
+  .animals-game__drop-area--2 {
+    bottom: 5%;
+    right: 24%; }
+  .animals-game__drop-area--3 {
+    top: 28%;
+    right: 5%; }
+
+.animals-game__animals {
+  width: 100%;
+  position: absolute;
+  bottom: -15px; }
+
+.animals-game__animal {
+  position: absolute;
+  cursor: move; }
+  .animals-game__animal--bird {
+    width: 5vw;
+    left: 35%;
+    bottom: 0; }
+  .animals-game__animal--frog {
+    width: 4vw;
+    left: 45%;
+    bottom: 0; }
+  .animals-game__animal--lynx {
+    width: 4vw;
+    left: 55%;
+    bottom: 0; }
+
+.animals-game__drop-area .animals-game__animal {
+  cursor: default;
+  max-width: none;
+  top: 0px !important;
+  left: 0px !important; }
+  .animals-game__drop-area .animals-game__animal--lynx {
+    bottom: 10px; }
+
+.animals-game__event-description-container {
+  min-height: 8.7vw; }
+
+.animals-game__event-description {
+  display: none;
+  padding: 2vw 4vw 0; }
+  .animals-game__event-description--show {
+    display: block; }
+  .animals-game__event-description--game-description {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 3vw;
+    font-family: "DINPro-Bold", "Arial", sans-serif;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    text-transform: uppercase;
+    text-align: center; }
+  .animals-game__event-description .animals-game__animal-name {
+    display: inline;
+    font-family: "DINPro-Bold", "Arial", sans-serif;
+    font-size: 1vw;
+    line-height: 1.7vw; }
+  .animals-game__event-description .animals-game__animal-description {
+    display: inline;
+    font-size: 1vw;
+    line-height: 1.7vw; }
+
+.reserves {
+  position: relative; }
+
+.reserves__map {
+  width: 100%;
+  height: 36vw;
+  position: absolute;
+  background-image: url(../img/map/map.png);
+  background-size: cover; }
+
+.reserves__map-point {
+  position: absolute;
+  cursor: pointer; }
+  .reserves__map-point--active::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../img/map/map-pin.png); }
+  .reserves__map-point--laplandskiy {
+    top: 2vw;
+    left: 6vw;
+    width: 2.1vw;
+    height: 3.1vw;
+    background-image: url(../img/map/area1.png);
+    background-size: cover; }
+    .reserves__map-point--laplandskiy::before {
+      bottom: -2%;
+      left: -35%;
+      width: 3.6vw;
+      height: 6vw;
+      background-image: url(../img/map/area1-act.png);
+      background-size: cover; }
+  .reserves__map-point--kivach {
+    top: 5.5vw;
+    left: 2vw;
+    width: 2.8vw;
+    height: 2.8vw;
+    background-image: url(../img/map/area2.png);
+    background-size: cover; }
+    .reserves__map-point--kivach::before {
+      bottom: 0;
+      left: -19%;
+      width: 3.8vw;
+      height: 6vw;
+      background-image: url(../img/map/area2-act.png);
+      background-size: cover; }
+  .reserves__map-point--pechoro-ilichskiy {
+    top: 15vw;
+    left: 8vw;
+    width: 3vw;
+    height: 3vw;
+    background-image: url(../img/map/area3.png);
+    background-size: cover; }
+    .reserves__map-point--pechoro-ilichskiy::before {
+      bottom: -3%;
+      left: -13%;
+      width: 3.7vw;
+      height: 6vw;
+      background-image: url(../img/map/area3-act.png);
+      background-size: cover; }
+  .reserves__map-point--barguzinskiy {
+    top: 28vw;
+    left: 33vw;
+    width: 3vw;
+    height: 3.5vw;
+    background-image: url(../img/map/area4.png);
+    background-size: cover; }
+    .reserves__map-point--barguzinskiy::before {
+      bottom: 0;
+      left: -13%;
+      width: 3.7vw;
+      height: 6.3vw;
+      background-image: url(../img/map/area4-act.png);
+      background-size: cover; }
+  .reserves__map-point--kronotckiy {
+    top: 16vw;
+    right: 0;
+    width: 3.3vw;
+    height: 2.5vw;
+    background-image: url(../img/map/area5.png);
+    background-size: cover; }
+    .reserves__map-point--kronotckiy::before {
+      bottom: 4%;
+      right: -9%;
+      width: 4vw;
+      height: 5.9vw;
+      background-image: url(../img/map/area5-act.png);
+      background-size: cover; }
+
+.reserves__reserve-item {
+  display: none;
+  padding: 37vw 4vw 0; }
+  .reserves__reserve-item--active {
+    display: block; }
+
+.reserves__reserves__reserve-item-header {
+  text-align: center; }
+
+.reserves__reserve-name {
+  font-family: "DINPro-Bold", "Arial", sans-serif;
+  font-size: 1.4vw;
+  text-transform: uppercase; }
+
+.reserves__reserve-location {
+  margin-top: .2vw;
+  font-family: "DINPro-Bold", "Arial", sans-serif;
+  font-size: 1.2vw; }
+
+.reserves__reserve-description {
+  min-height: 8.5vw; }
+
+.reserves__reserve-toggle-arrows-container {
+  width: 35vw;
+  margin: 0 auto;
+  position: relative; }
+
+.reserves__reserve-toggle-arrow {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 37vw;
+  cursor: pointer; }
+  .reserves__reserve-toggle-arrow::before {
+    content: '';
+    width: 1.5vw;
+    height: 1.5vw;
+    display: block;
+    position: absolute;
+    top: .5vw;
+    border-top: 0.15vw solid #fff;
+    border-right: 0.15vw solid #fff;
+    z-index: 10; }
+  .reserves__reserve-toggle-arrow--left {
+    left: 0; }
+    .reserves__reserve-toggle-arrow--left::before {
+      left: 15px;
+      transform: rotate(-135deg); }
+  .reserves__reserve-toggle-arrow--right {
+    right: 0; }
+    .reserves__reserve-toggle-arrow--right::before {
+      right: 15px;
+      transform: rotate(45deg); }
+
+.interactive-tv {
+  margin: 2vw auto 4vw;
+  width: 27vw;
+  height: 19.4vw;
+  position: relative; }
+  .interactive-tv__tv {
+    display: block;
+    width: 100%;
+    height: 19.4vw;
+    overflow: hidden;
+    border-radius: 10px; }
+    .interactive-tv__tv .body {
+      width: 100%;
+      height: 100%;
+      fill: #575e5e;
+      position: absolute; }
+    .interactive-tv__tv .body-2 {
+      width: 99%;
+      height: 19.5vw;
+      fill: #6e7575;
+      position: absolute;
+      transform: translateX(0.4vw) translateY(-0.4vw); }
+    .interactive-tv__tv .button-panel {
+      fill: #575e5e;
+      width: 90%;
+      height: 2.7vw;
+      transform: translateX(1.6vw) translateY(16vw); }
+    .interactive-tv__tv .button {
+      fill: #6e7575;
+      width: 11%;
+      height: 1.8vw; }
+      .interactive-tv__tv .button--first {
+        transform: translateX(2.5vw) translateY(16.45vw); }
+      .interactive-tv__tv .button--second {
+        transform: translateX(6vw) translateY(16.45vw); }
+      .interactive-tv__tv .button--third {
+        transform: translateX(9.5vw) translateY(16.45vw); }
+  .interactive-tv--on .interactive-tv__picture-block {
+    background-image: url(../img/tv/tv-on.jpg);
+    background-size: cover; }
+  .interactive-tv--on .interactive-tv__power-btn {
+    color: #345f6e;
+    background-color: #d0b069;
+    box-shadow: inset 0 0.2vw 0 0 #877344; }
+
+.interactive-tv__picture-block {
+  position: absolute;
+  top: 1vw;
+  left: 50%;
+  margin-left: -44%;
+  width: 90%;
+  height: 76%;
+  background: #000;
+  border-radius: 15px; }
+  .interactive-tv__picture-block::before {
+    content: "";
+    display: block;
+    width: 13vw;
+    height: 9vw;
+    position: absolute;
+    top: 0.2vw;
+    right: 0.3vw;
+    background-image: url(../img/tv/glare.png);
+    background-size: cover; }
+
+.interactive-tv__power-btn {
+  display: inline-block;
+  padding: 0.4vw 0.6vw 0.5vw;
+  position: absolute;
+  bottom: 1.05vw;
+  right: 1.6vw;
+  font-family: "DINPro-Bold", "Arial", sans-serif;
+  font-size: 1.1vw;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 1.5vw;
+  color: #004470;
+  background-color: #f4cf7b;
+  box-shadow: inset 0 -0.2vw 0 0 #bc9f5f; }
+
+@media (max-width: 767px) {
+  .articles {
+    min-height: 100vh; }
+  .articles__articles-header {
+    width: 90vw; }
+  .articles__main-heading {
+    font-size: 6vw;
+    line-height: 7vw;
+    min-height: 9vw; }
+  .articles__dots-container {
+    bottom: -7.7vw; }
+  .articles__dot {
+    width: 4vw;
+    height: 4vw;
+    margin: 0 1.5vw; }
+  .article-item {
+    width: 90vw; }
+  .article-item p {
+    font-size: 2.4vw;
+    line-height: 3.3vw;
+    padding-top: 3.4vw; }
+  .article-item__article-static-content {
+    padding: 10vw 4vw 0; }
+  .article-item__article-heading {
+    height: 5.7vw; }
+  .article-item__article-heading text {
+    font-size: 5vw; }
+  .article-item__article-heading .article-item__header-gradient {
+    transform: translateY(4.6vw); }
+  .article-item__article-heading .article-item__header-shadow {
+    transform: translateY(5.2vw); }
+  .article-item__article-additional-heading {
+    font-size: 3.3vw; }
+  .article-item__link-container {
+    padding: 3.5vw 0 4.5vw 0;
+    font-size: 2.4vw;
+    line-height: 3.3vw; }
+  .article-item__types-of-taiga .article-item__type:last-child {
+    margin-left: 5vw; }
+  .article-item__types-of-taiga p {
+    font-size: 2.4vw;
+    line-height: 3.7vw; }
+  .article-item__types-of-taiga .article__type-heading {
+    font-size: 2.4vw;
+    line-height: 3.3vw; }
+  .article-item__reserves-prev {
+    padding-bottom: 3vw; }
+  .article-item__item {
+    padding-bottom: 1vw; }
+  .article-item__item:first-child {
+    padding-bottom: 1vw; }
+  .article-item__item-feature {
+    font-size: 2vw; }
+  .article-item__item-description {
+    font-size: 2.2vw;
+    line-height: 4.2vw; }
+  .article-item__film-genre-heading {
+    font-size: 2vw; }
+  .article-item__film-name {
+    padding-top: 3vw;
+    font-size: 2vw; }
+  .interactive-planet__range {
+    height: 1.6vw; }
+  .interactive-planet__range .interactive-planet__range-scale {
+    height: 1.6vw; }
+  .interactive-planet__range .interactive-planet__range-pin {
+    width: 3.6vw;
+    height: 3.6vw;
+    transform: translateX(-20%) translateY(-1.8vw); }
+  .interactive-planet__range .interactive-planet__range-pin::before {
+    width: 1.8vw;
+    height: 1.8vw; }
+  .interactive-planet__planet-picture img {
+    width: 40vw;
+    height: 40vw; }
+  .slider-after-before {
+    height: 32vw; }
+  .slider-after-before__slide-forest {
+    background-size: 91vw; }
+  .slider-after-before__delimeter-pin {
+    width: 3.5vw;
+    height: 7vw;
+    margin-left: -1.75vw; }
+  .slider-after-before__delimeter-pin:before {
+    width: 1.7vw;
+    height: 0.5vw;
+    margin-left: -0.9vw;
+    top: 1.6vw;
+    box-shadow: 0 1.6vw 0 0 #003456, 0 3.2vw 0 0 #003456; }
+  .insect-slider {
+    min-height: 22vw; }
+  .insect-slider__insect-swarm--mosquitoes {
+    width: 20vw;
+    height: 20vw; }
+  .insect-slider__insect-swarm--flies {
+    width: 14.6vw;
+    height: 17vw;
+    left: 30vw; }
+  .insect-slider__insect-swarm--midges {
+    width: 12vw;
+    height: 16vw;
+    left: 55vw; }
+  .insect-slider__aerosol {
+    width: 7.2vw;
+    height: 21.6vw; }
+  .document-slider__heading {
+    margin: 3.45vw 0 2.3vw 19.78vw;
+    padding: 1.38vw 0 1.15vw;
+    font-size: 1.2vw;
+    border-top: 0.23vw dashed #484848;
+    border-bottom: 0.23vw dashed #484848; }
+  .document-slider__word {
+    width: 71.3vw;
+    min-height: 92vw; }
+  .document-slider__word p {
+    text-indent: 3.45vw;
+    font-size: 1.495vw;
+    line-height: 3.45vw; }
+  .document-slider__page {
+    padding: 0 6.44vw 0 9.66vw; }
+  .animals-game__habitat {
+    height: 32.3vw; }
+  .animals-game__drop-area {
+    width: 8.5vw;
+    height: 8.5vw; }
+  .animals-game__animal--bird {
+    width: 8.5vw; }
+  .animals-game__animal--frog {
+    width: 6.8vw; }
+  .animals-game__animal--lynx {
+    width: 6.8vw; }
+  .animals-game__event-description-container {
+    min-height: 19vw; }
+  .animals-game__event-description {
+    padding: 4vw 4vw 0; }
+  .animals-game__event-description--game-description {
+    padding-top: 6vw;
+    font-size: 2.5vw;
+    line-height: 3.5vw; }
+  .animals-game__event-description .animals-game__animal-name {
+    font-size: 2vw; }
+  .animals-game__event-description .animals-game__animal-description {
+    font-size: 2vw; }
+  .reserves__map {
+    height: 59vw; }
+  .reserves__map-point--laplandskiy {
+    width: 6.3vw;
+    height: 9.3vw;
+    left: 10vw; }
+  .reserves__map-point--laplandskiy::before {
+    width: 10.8vw;
+    height: 18vw; }
+  .reserves__map-point--kivach {
+    width: 8.4vw;
+    height: 8.4vw; }
+  .reserves__map-point--kivach::before {
+    width: 11.4vw;
+    height: 18vw; }
+  .reserves__map-point--pechoro-ilichskiy {
+    width: 9vw;
+    height: 9vw;
+    top: 21vw;
+    left: 12vw; }
+  .reserves__map-point--pechoro-ilichskiy::before {
+    width: 11.1vw;
+    height: 18vw; }
+  .reserves__map-point--barguzinskiy {
+    width: 9vw;
+    height: 10.5vw;
+    top: 43vw;
+    left: 53vw; }
+  .reserves__map-point--barguzinskiy::before {
+    width: 11.1vw;
+    height: 18.9vw; }
+  .reserves__map-point--kronotckiy {
+    width: 9.9vw;
+    height: 7.5vw;
+    top: 21vw; }
+  .reserves__map-point--kronotckiy::before {
+    width: 12vw;
+    height: 17.7vw; }
+  .reserves__reserve-item {
+    padding: 60vw 4vw 0; }
+  .reserves__reserve-name {
+    font-size: 2.4vw; }
+  .reserves__reserve-location {
+    margin-top: .6vw;
+    font-size: 1.8vw; }
+  .reserves__reserve-description {
+    min-height: 20vw; }
+  .reserves__reserve-toggle-arrows-container {
+    width: 60vw; }
+  .reserves__reserve-toggle-arrow {
+    top: 60.5vw; }
+  .reserves__reserve-toggle-arrow::before {
+    width: 3vw;
+    height: 3vw;
+    border-top: 0.35vw solid #fff;
+    border-right: 0.35vw solid #fff; }
+  .interactive-tv {
+    width: 63vw;
+    height: 43.4vw; }
+  .interactive-tv__tv {
+    width: 100%;
+    height: 41.4vw; }
+  .interactive-tv__tv .body-2 {
+    height: 40.5vw; }
+  .interactive-tv__tv .button-panel {
+    height: 4.3vw;
+    transform: translateX(3.6vw) translateY(35vw); }
+  .interactive-tv__tv .button {
+    width: 11%;
+    height: 3.1vw; }
+  .interactive-tv__tv .button--first {
+    transform: translateX(4.5vw) translateY(35.55vw); }
+  .interactive-tv__tv .button--second {
+    transform: translateX(12.5vw) translateY(35.55vw); }
+  .interactive-tv__tv .button--third {
+    transform: translateX(20.5vw) translateY(35.55vw); }
+  .interactive-tv__power-btn {
+    right: 3.6vw;
+    bottom: 4.8vw;
+    font-size: 2vw; } }

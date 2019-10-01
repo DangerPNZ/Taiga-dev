@@ -1,0 +1,182 @@
+.article-item {
+  display: none;
+  position: relative;
+  width: 55vw;
+  margin: 0 auto;
+  background-color: $article-bg;
+  color: #fff;
+  border: .01vw solid transparent;
+  @include respond-to('mobile') {
+    width: 90vw;
+  }
+  p {
+    font-size: 1vw;
+    line-height: 1.7vw;
+    padding-top: 1.4vw;
+    @include respond-to('mobile') {
+      font-size: 2.4vw;
+      line-height: 3.3vw;
+      padding-top: 3.4vw;
+    }
+  }
+  &--active {
+    display: block;
+  }
+}
+.article-item__article-static-content {
+  padding: 3.5vw 4vw 0;
+  @include respond-to('mobile') {
+    padding: 10vw 4vw 0;
+  }
+}
+.article-item__article-heading {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:2.3vw;
+  @include respond-to('mobile') {
+    height: 5.7vw;
+  }
+  text {
+    font-family: "DINPro-Black", "Arial", sans-serif;
+    font-size: 2vw;
+    text-transform: uppercase; 
+    @include respond-to('mobile') {
+      font-size: 5vw;
+    }
+  }
+  .article-item__header-gradient {
+    transform: translateY(2vw);
+    @include respond-to('mobile') {
+        transform: translateY(4.6vw);
+    }
+  }
+  .article-item__header-shadow {
+    transform: translateY(2.2vw);
+    @include respond-to('mobile') {
+      transform: translateY(5.2vw);
+    }
+  }
+}
+.article-item__header {
+  text-align: center;
+}
+.article-item__article-additional-heading {
+  @include DINPRO-Bold;
+  padding-top: .3vw;
+  font-size: 1.3vw;
+  @include respond-to('mobile') {
+    font-size: 3.3vw;
+  }
+}
+.article-item__link-container {
+  padding: 2.5vw 0 3vw 0;
+  @include DINPRO-Medium;
+  font-size: 1.2vw;
+  line-height: 1.8vw;
+  text-align: center;
+  @include respond-to('mobile') {
+    padding: 3.5vw 0 4.5vw 0;
+    font-size: 2.4vw;
+    line-height: 3.3vw;
+  }
+  .article-item__link {
+    display: block;
+    color: #fff;
+  }
+}
+.article-item__types-of-taiga {
+  display: flex;
+  padding: 3vw 0 4vw;
+  .article-item__type {
+    width: 45%;
+    &:last-child {
+      margin-left: 3vw;
+      @include respond-to('mobile') {
+        margin-left: 5vw;
+      }
+    }
+  }
+  p {
+    padding: 0;
+    font-size: 1vw;
+    line-height: 1.7vw;
+    @include respond-to('mobile') {
+      font-size: 2.4vw;
+      line-height: 3.7vw;
+    }
+  }
+  .article__type-heading {
+    padding-bottom: .6vw;
+    @include DINPRO-Bold;
+    font-size: 1vw;
+    @include respond-to('mobile') {
+      font-size: 2.4vw;
+      line-height: 3.3vw;
+    }
+  }
+}
+.article-item__reserves-prev {
+  @include respond-to('mobile') {
+    padding-bottom: 3vw;
+  }
+}
+.article-item__item {
+  padding-bottom: 1.6vw;
+  @include respond-to('mobile') {
+    padding-bottom: 1vw;
+  }
+  &:first-child {
+    padding-top: 1.6vw;
+    @include respond-to('mobile') {
+      padding-bottom: 1vw;
+    }
+  }
+  
+}
+.article-item__item-feature {
+  display: inline;
+  @include DINPRO-Black;
+  font-size: 1vw;
+  line-height: 1.8vw;
+  text-transform: uppercase;
+  @include respond-to('mobile') {
+    font-size: 2vw;
+  }
+}
+.article-item__item-description {
+  display: inline;
+  font-size: 1vw;
+  line-height: 1.7vw;
+  padding-top: 1.4vw;
+  @include respond-to('mobile') {
+    font-size: 2.2vw;
+    line-height: 4.2vw;
+  }
+}
+.article-item__film-genre-heading {
+  padding-top: 2vw;
+  font-family: "DINPro-Black", "Arial", sans-serif;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  text-align: center;
+  @include respond-to('mobile') {
+    font-size: 2vw;
+  }
+}
+.article-item__film-item {
+  padding-bottom: .5vw;
+  p {
+    padding-top: .3vw;
+  }
+}
+.article-item__film-name {
+  padding-top: 1vw;
+  @include DINPRO-Bold;
+  font-size: 1.1vw;
+  @include respond-to('mobile') {
+    padding-top: 3vw;
+    font-size: 2vw;
+  }
+}

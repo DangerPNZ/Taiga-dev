@@ -1,0 +1,30 @@
+@mixin DINPRO {
+  font-family: "DINPro-Regular", "Arial", sans-serif;
+}
+
+@mixin DINPRO-Bold {
+  font-family: "DINPro-Bold", "Arial", sans-serif;
+}
+
+@mixin DINPRO-Black {
+  font-family: "DINPro-Black", "Arial", sans-serif;
+}
+
+@mixin DINPRO-Medium {
+  font-family: "DINPro-Medium", "Arial", sans-serif;
+}
+
+@mixin CourierNew-Bold {
+  font-family: "Courier New", "Courier", monospace;
+  font-weight: bold;
+}
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  } @else {
+    @error 'Не указано значение для `#{$breakpoint}`';
+  }
+}

@@ -1,0 +1,72 @@
+.articles {
+  position: relative;
+  width: 100%;
+  padding: 1.5vw 0 12.5vw;
+  background-image: url(../img/main/articles-bg.jpg);
+  background-size: cover;
+  background-position: left bottom;
+  @include respond-to('mobile') {
+    min-height: 100vh;
+  }
+}
+.articles__filter {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $filter;
+}
+.articles__articles-header {
+  position: relative;
+  width: 55vw;
+  margin: 0 auto;
+  z-index: 10;
+  @include respond-to('mobile') {
+    width: 90vw;
+  }
+}
+.articles__main-heading {
+  @include DINPRO-Black;
+  font-size: 3vw;
+  line-height: 3vw;
+  min-height: 4vw;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  @include respond-to('mobile') {
+    font-size: 6vw;
+    line-height: 7vw;
+    min-height: 9vw;
+  }
+}
+.articles__dots-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -2.7vw;
+  @include respond-to('mobile') {
+    bottom: -7.7vw;
+  }
+}
+.articles__dot {
+  width: 1vw;
+  height: 1vw;
+  margin: 0 0.5vw;
+  border: 0.1vw solid #fff;
+  cursor: pointer;
+  &--active {
+    border: none;
+    background-color: $lightblue;
+  }
+  @include respond-to('mobile') {
+    width: 4vw;
+    height: 4vw;
+    margin: 0 1.5vw
+  }
+}
+.articles__articles-container {
+  position: relative;
+}

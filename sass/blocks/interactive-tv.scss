@@ -1,0 +1,127 @@
+.interactive-tv {
+  margin: 2vw auto 4vw;
+  width: 27vw;
+  height: 19.4vw;
+  position: relative;
+  @include respond-to('mobile') {
+    width: 63vw;
+    height: 43.4vw;
+  }
+  &__tv {
+    display: block;
+    width: 100%;
+    height: 19.4vw;
+    overflow: hidden;
+    border-radius: 10px;
+    @include respond-to('mobile') {
+      width: 100%;
+      height: 41.4vw;
+    }
+    .body {
+      width: 100%; 
+      height: 100%; 
+      fill:#575e5e; 
+      position: absolute;
+    }
+    .body-2 {
+      width: 99%; 
+      height: 19.5vw; 
+      fill:#6e7575; 
+      position: absolute; 
+      transform: translateX(0.4vw) translateY(-0.4vw);
+      @include respond-to('mobile') {
+        height: 40.5vw; 
+      }
+    }
+    .button-panel {
+      fill: #575e5e;
+      width: 90%;
+      height: 2.7vw;
+      transform: translateX(1.6vw) translateY(16vw);
+      @include respond-to('mobile') {
+        height: 4.3vw;
+        transform: translateX(3.6vw) translateY(35vw);
+      }
+    }
+    .button {
+      fill: #6e7575; 
+      width: 11%; 
+      height: 1.8vw;
+      @include respond-to('mobile') {
+        width: 11%; 
+        height: 3.1vw;
+      }
+      &--first {
+        transform: translateX(2.5vw) translateY(16.45vw);
+        @include respond-to('mobile') {
+          transform: translateX(4.5vw) translateY(35.55vw);
+        }
+      }
+      &--second {
+        transform: translateX(6vw) translateY(16.45vw);
+        @include respond-to('mobile') {
+          transform: translateX(12.5vw) translateY(35.55vw);
+        }
+      }
+      &--third {
+        transform: translateX(9.5vw) translateY(16.45vw);
+        @include respond-to('mobile') {
+          transform: translateX(20.5vw) translateY(35.55vw);
+        }
+      }
+    }
+  }
+  &--on {
+    .interactive-tv__picture-block {
+      background-image: url(../img/tv/tv-on.jpg);
+      background-size: cover;
+    }
+    .interactive-tv__power-btn {
+      color: #345f6e;
+      background-color: #d0b069;
+      box-shadow: inset 0 0.2vw 0 0 #877344;
+    }
+  }
+}
+.interactive-tv__picture-block {
+  position: absolute;
+  top: 1vw;
+  left: 50%;
+  margin-left: -44%;
+  width: 90%;
+  height: 76%;
+  background: #000;
+  border-radius: 15px;
+  &::before {
+    content: "";
+    display: block;
+    width: 13vw;
+    height: 9vw;
+    position: absolute;
+    top: 0.2vw;
+    right: 0.3vw;
+    background-image: url(../img/tv/glare.png);
+    background-size: cover;
+  }
+}
+.interactive-tv__power-btn {
+  display: inline-block;
+  padding: 0.4vw 0.6vw 0.5vw;
+  position: absolute;
+  bottom: 1.05vw;
+  right: 1.6vw;
+  @include DINPRO-Bold;
+  font-size: 1.1vw;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 1.5vw;
+  color: $article-bg;
+  background-color: $peach;
+  box-shadow: inset 0 -0.2vw 0 0 #bc9f5f;
+  @include respond-to('mobile') {
+    right: 3.6vw;
+    bottom: 4.8vw;
+    font-size: 2vw;
+  }
+}

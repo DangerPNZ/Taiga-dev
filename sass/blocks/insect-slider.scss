@@ -1,0 +1,64 @@
+.insect-slider {
+  display: flex;
+  margin-top: 2vw;
+  width: 100%;
+  min-height: 11vw;
+  @include respond-to('mobile') {
+    min-height: 22vw;
+  }
+}
+.insect-slider__insect-container {
+  position: relative;
+}
+.insect-slider__insect-swarm {
+  position: absolute;
+  &--mosquitoes {
+    width: 10vw;
+    height: 10vw;
+    background-image: url(../img/insects/mosquitoes.png);
+    background-size: cover;
+    @include respond-to('mobile') {
+      width: 20vw;
+      height: 20vw;
+    }
+  }
+  &--flies {
+    width: 7.3vw;
+    height: 8.5vw;
+    left: 16vw;
+    background-image: url(../img/insects/flies.png);
+    background-size: cover;
+    @include respond-to('mobile') {
+      width: 14.6vw;
+      height: 17vw;
+      left: 30vw;
+    }
+  }
+  &--midges {
+    width: 6vw;
+    height: 8vw;
+    left: 30vw;
+    background-image: url(../img/insects/midges.png);
+    background-size: cover;
+    @include respond-to('mobile') {
+      width: 12vw;
+      height: 16vw;
+      left: 55vw;
+    }
+  }
+  &--hide {
+    display: none;
+  }
+}
+.insect-slider__aerosol {
+  width: 3.6vw;
+  height: 10.8vw;
+  margin-left: auto;
+  background-image: url(../img/insects/aerosol.png);
+  background-size: cover;
+  cursor: pointer;
+  @include respond-to('mobile') {
+    width: 7.2vw;
+    height: 21.6vw;
+  }
+}
